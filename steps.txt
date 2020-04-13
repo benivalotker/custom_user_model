@@ -1,0 +1,12 @@
+Note: if migrate commands is run before step 1-2, remove the DB files and start those steps.
+
+1. create users class & users manager class models.
+2. add model name to setting.py under AUTH_USER_MODEL variable (EX: AUTH_USER_MODEL = 'users.Profile').
+3. run makemigrations and migrate to create the model and the admin.
+4. register the model in admin.py (optional).
+5. create the forms filr (forms class).
+6. create the views (and urls.py).
+7. run server.
+
+django custom users model tutorial:
+https://docs.djangoproject.com/en/3.0/topics/auth/customizing/ 
